@@ -18,6 +18,22 @@ allprojects {
   }
 }
 
+ext {
+  // Sdk and tools
+  minSdkVersion = 16
+  targetSdkVersion = 25
+  compileSdkVersion = 25
+  buildToolsVersion = '25.0.2'
+
+  // App dependencies
+  supportLibraryVersion = '25.1.0'
+  retrofitVersion = '2.1.0'
+  okhttpVersion = '3.5.0'
+  rxjavaVersion = '2.0.1'
+  rxandroidVersion = '1.2.1'
+  CommonAdapter = "1.2.2"
+}
+
 task clean(type: Delete) {
   delete rootProject.buildDir
 }
